@@ -1,0 +1,17 @@
+//diff is gr8. Use it like this
+diff -u file.ext file2.ext
+git diff #ver1 #ver2
+
+//git log
+git log
+git log --stat --> stats of which files have changed after commit
+
+//git commit- snapshot of all the files in the repo
+
+//git checkout- reset to a previous version
+git checkout commitid
+git checkout master --> checkout master state
+
+to copy a directory from one computer to another using the command scp
+
+copying can be done on any directory, whereas git clone only works on a Git repository

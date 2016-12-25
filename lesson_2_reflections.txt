@@ -1,0 +1,19 @@
+git init -->convert a directory into git repo
+git status --> status of changes made to repo
+git add filename.ext --> add files to staging area to be committed
+git commit --> commit the file in the staged area. Add the commit message at the beginning of the file 	opened
+git diff --> difference bw file in working directory and staging area
+git diff --staged --> difference bw files in staged area and repo
+git reset --hard --> remove all changed files in working dir and staging area(irreversible)
+git branch --> show all branches
+git branch branchName --> create new branch of name branchName
+git checkout branchName --> checkout that branch
+git log --graph --oneline branchName1 branchName2 --> oneline description of all commits of all branch
+git checkout -b newBranchName --> give new name to an unnamed commit and make it a branch st it is reachable...equivalent to 2 cmds (git branch newBranchName + git checkout newBranchName)
+git branch -d branchName --> delete branch (only label not the commits)
+git show commitId --> show the diffs bw a commit and its parent without actually us knowing its parent
+git log -n 1 --> show these many commits only
+git remote --> list of remote repos
+git remote add origin git@github.com:poisoncoder/reflections.git --> add remote repos(origin)
+git remote -v --> detailed
+git push origin master --> push local repos(master) to remote(origin)
