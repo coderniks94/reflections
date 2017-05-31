@@ -1,0 +1,79 @@
+
+============================LESSON 1===================================
+
+
+
+//diff is gr8. Use it like this
+diff -u file.ext file2.ext
+//use fc for windows
+fc filename1.ext filename2.ext
+git diff #ver1 #ver2
+
+//git log
+git log
+git log --stat --> stats of which files have changed after commit
+
+//download git repository
+git clone url
+
+//change output of git to colored instead of bnw
+git config --global color.ui auto
+
+//git commit- snapshot of all the files in the repo
+
+//git checkout- reset to a previous version
+git checkout commitid
+git checkout master --> checkout master state
+
+to copy a directory from one computer to another using the command scp
+
+copying can be done on any directory, whereas git clone only works on a Git repository
+
+
+
+============================LESSON 2===================================
+
+
+git init -->convert a directory into git repo
+git status --> status of changes made to repo
+git add filename.ext --> add files to staging area to be committed
+git commit --> commit the file in the staged area. Add the commit message at the beginning of the file 	opened
+git diff --> difference bw file in working directory and staging area
+git diff --staged --> difference bw files in staged area and repo
+git reset --hard --> remove all changed files in working dir and staging area(irreversible)
+git branch --> show all branches
+git branch branchName --> create new branch of name branchName
+git checkout branchName --> checkout that branch
+git log --graph --oneline branchName1 branchName2 --> oneline description of all commits of all branch
+git checkout -b newBranchName --> give new name to an unnamed commit and make it a branch st it is reachable...equivalent to 2 cmds (git branch newBranchName + git checkout newBranchName)
+
+#to merge one branch to master first checkout master and then run this cmd
+git merge master newBranchName
+git show commitId --> show the diffs bw a commit and its parent without actually us knowing its parent
+git branch -d branchName --> delete branch (only label not the commits)
+git log -n 1 --> show these many commits only
+
+
+
+
+
+============================LESSON 3===================================
+
+
+
+
+git remote --> list of remote repos
+git remote add origin git@github.com:poisoncoder/reflections.git --> add remote repos(origin)
+git remote -v --> detailed
+
+#clone- local to local OR remote to local
+#fork- clone on github only from some repo to your repo on githun
+
+git push origin branch_name--> push local branch(eg. master) to remote(origin)
+git remote rm origin --> remove origin repo
+git pull origin master --> 
+git fetch origin --> make a new branch of remote repo on local called (origin/master) when there are changes on both local and github remote...Can be later merged
+git pull origin master = git fetch origin + git merge master origin/master
+
+#origin/master is the commit when it was last pulled from the github repo
+#pull requests on github is misnomer and can be renamed as merge requests. they ar a feature only of github

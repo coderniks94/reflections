@@ -1,3 +1,44 @@
+git remote --> list of remote repos
+git remote add origin git@github.com:poisoncoder/reflections.git --> add remote repos(origin)
+git remote -v --> detailed
+
+#clone- local to local OR remote to local
+#fork- clone on github only from some repo to your repo on githun
+
+git push origin branch_name--> push local branch(eg. master) to remote(origin)
+git remote rm origin --> remove origin repo
+git pull origin master --> 
+git fetch origin --> make a new branch of remote repo on local called (origin/master) when there are changes on both local and github remote...Can be later merged
+git pull origin master = git fetch origin + git merge master origin/master
+
+#origin/master is the commit when it was last pulled from the github repo
+#pull requests on github is misnomer and can be renamed as merge requests. they ar a feature only of github
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 When would you want to use a remote repository rather than keeping all your work
 local?
 
@@ -27,3 +68,18 @@ When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
     Fill in your answer here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

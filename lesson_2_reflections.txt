@@ -10,11 +10,45 @@ git branch branchName --> create new branch of name branchName
 git checkout branchName --> checkout that branch
 git log --graph --oneline branchName1 branchName2 --> oneline description of all commits of all branch
 git checkout -b newBranchName --> give new name to an unnamed commit and make it a branch st it is reachable...equivalent to 2 cmds (git branch newBranchName + git checkout newBranchName)
-git branch -d branchName --> delete branch (only label not the commits)
+
+#to merge one branch to master first checkout master and then run this cmd
+git merge master newBranchName
 git show commitId --> show the diffs bw a commit and its parent without actually us knowing its parent
+git branch -d branchName --> delete branch (only label not the commits)
 git log -n 1 --> show these many commits only
-git remote --> list of remote repos
-git remote add origin git@github.com:poisoncoder/reflections.git --> add remote repos(origin)
-git remote -v --> detailed
-git push origin master --> push local repos(master) to remote(origin)
-git remote rm roigin --> remove origin repo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What happens when you initialize a repository? Why do you need to do it?
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
